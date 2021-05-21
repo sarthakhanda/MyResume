@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="myName"
+            type="com.example.myresume.MyName" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activityMain"
+        android:orientation="vertical"
+        android:padding="@dimen/main_padding">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/headName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@={myName.name}"
+            android:textAlignment="center"
+            android:textSize="@dimen/head_size" />
+
+        <EditText
+            android:id="@+id/userName"
+            style="@style/headName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_text"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/done_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/padding_bottom"
+            android:text="@string/done" />
+
+        <TextView
+            android:id="@+id/nickname"
+            style="@style/headName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@={myName.nickname}"
+            android:textAlignment="center"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/star_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/yellow_star"
+            android:paddingBottom="@dimen/padding_bottom"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <ScrollView
+            android:id="@+id/bio_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/bio_text"
+                style="@style/headName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="@dimen/line_spacing"
+                android:text="@string/intro_text"
+                android:textAlignment="center"
+                android:textSize="@dimen/intro_size" />
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyResume</string>
+    <string name="yellow_star">Yellow Star</string>
+    <string name="intro_text">Logical and result-driven Developer successfully developing elegant,
+        groundbreaking website and application designs for demanding clients with various business
+        objectives. Judicious and creative in project management team leadership and independent
+        problem-solving. Highly organised multitasking with calm and focused demeanour, Translating
+        solutions into code and working across many different APIs. third-party integrations and
+        databases. Solution-driven professional excelling in highly collaborative work environment,
+        finding solutions to challenges and focused on customer satisfaction.</string>
+    <string name="hint_text">Enter Your Nickname</string>
+    <string name="done">DONE</string>
+</resources>
